@@ -208,9 +208,11 @@ public class PantallaRegistro extends javax.swing.JInternalFrame {
            tfNombre.setText("");
            tfApellido.setText("");
            tfNota.setText("");
-          
-           
-        } catch (SQLException ex) {
+           dcFechaMatriculacion.setDate(null);
+
+
+
+          } catch (SQLException ex) {
             Logger.getLogger(PantallaRegistro.class.getName()).log(Level.SEVERE, null, ex);
         JOptionPane.showMessageDialog(null,"No se puede conectar a la base de datos");
     
